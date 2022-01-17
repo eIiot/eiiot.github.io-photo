@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link rel="stylesheet" type="text/css" href="./tailwind.css">
+</head>
+<body>
+  <div id="nav" class="flex flex-row justify-center items-center absolute w-screen h-max">
+    <a id="urban-filter" class="cursor-pointer text-xs font-bold">URBAN</a>
+    <a id="all-filter" class="m-4 active-btn cursor-pointer text-xs font-bold">ALL</button>
+    <a id="landscape-filter" class="cursor-pointer text-xs font-bold">LANDSCAPE</a>
+  </div>
+  <div id="container" class="flex flex-col h-screen justify-center items-center">
+    <div id="carousel" class="flex w-4/5 h-4/5 justify-center">
+      <img alt="" class="object-contain z-50">
+      <div id="left" class="absolute top-0 left-0 w-1/3 h-full cursor-w-resize"></div>
+      <div id="right" class="absolute top-0 right-0 w-1/3 h-full cursor-e-resize"></div>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
