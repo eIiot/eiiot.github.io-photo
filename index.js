@@ -8,8 +8,8 @@ const landscapeFilter = document.getElementById('landscape-filter');
 const allFilter = document.getElementById('all-filter');
 
 const allImages = {
-  '0.jpg': {description: "Sunset", location: "San Francisco, CA", tags: ["landscape"]},
   '1.jpg': {description: "Man on Beach", location: "Long Beach, CA", tags: ["landscape"]},
+  '0.jpg': {description: "Sunset", location: "San Francisco, CA", tags: ["landscape"]},
   '2.jpg': {description: "Field of Lights", location: "Paso Robles, CA", tags: ["landscape"]},
   '3.jpg': {description: "Chicago", location: "Chicago, IL", tags: ["urban"]},
   '4.jpg': {description: "Rooftop", location: "Chicago, CA", tags: ["urban"]},
