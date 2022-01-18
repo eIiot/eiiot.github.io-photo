@@ -18,6 +18,11 @@ const allImages = {
   '7.jpg': {description: "Kensington", location: "Kensington, CA", tags: ["urban"]},
 };
 
+Object.keys(allImages).forEach(image => {
+    let img = new Image()
+    img.src = 'img/' + image
+})
+
 // ceate a duplicate of the allImages object, but only with the 'urban' tags
 const urbanImages = {};
 Object.keys(allImages).forEach(key => {
