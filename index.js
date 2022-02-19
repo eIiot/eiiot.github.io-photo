@@ -2,7 +2,7 @@ const left = document.getElementById('left');
 const right = document.getElementById('right');
 const img = document.querySelector('img');
 
-const allImages = {
+const images = {
   '1.jpg': {description: "Beach", location: "Long Beach, CA", tags: ["landscape"]},
   '0.jpg': {description: "Sunset", location: "San Francisco, CA", tags: ["landscape"]},
   '2.jpg': {description: "Field of Lights", location: "Paso Robles, CA", tags: ["landscape"]},
@@ -12,26 +12,10 @@ const allImages = {
   '7.jpg': {description: "Kensington", location: "Kensington, CA", tags: ["urban"]},
 };
 
-Object.keys(allImages).forEach(image => {
+Object.keys(images).forEach(image => {
     let img = new Image()
     img.src = 'img/' + image
 })
-
-// ceate a duplicate of the allImages object, but only with the 'urban' tags
-const urbanImages = {};
-Object.keys(allImages).forEach(key => {
-  if (allImages[key].tags.includes('urban')) {
-    urbanImages[key] = allImages[key];
-  }
-});
-const landscapeImages = {};
-Object.keys(allImages).forEach(key => {
-  if (allImages[key].tags.includes('landscape')) {
-    landscapeImages[key] = allImages[key];
-  }
-});
-
-let images = allImages;
 
 img.src = './img/' + Object.keys(images)[0];
 img.title = images[Object.keys(images)[0]].description + '\n' + images[Object.keys(images)[0]].location;
